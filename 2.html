@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <!-- Add Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* CSS styles can be added here if needed */
+        body {
+            background: linear-gradient(40deg, #edc4d6 40%, white 60%); /* Set background gradient */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            font-family: Arial, sans-serif; /* Optional: Define a font */
+            min-height: 100vh; /* Ensure the body fills the entire viewport height */
+            display: flex; /* Use flexbox layout */
+            flex-direction: column; /* Arrange children in a column */
+            align-items: center; /* Center items horizontally */
+        }
+
+        header {
+            background-color: white; /* Set header background color to white */
+            height: 2.5cm; /* Set header height to 2.5 cm */
+            width: 100%; /* Make header full width */
+            display: flex; /* Use flexbox layout */
+            justify-content: space-between; /* Align items to left and right */
+            align-items: center; /* Center items vertically */
+            padding: 0 20px; /* Add padding to the sides */
+        }
+
+        header h1 {
+            margin: 0; /* Remove default margin */
+            font-weight: normal; /* Remove bold */
+        }
+
+        header .subtitle {
+            font-size: 16px; /* Decrease font size of subtitle */
+            font-weight: normal; /* Remove bold */
+        }
+
+        main {
+            flex: 1; /* Grow to fill remaining space */
+            padding: 20px; /* Add padding to separate content from edges */
+            text-align: center; /* Center text */
+            max-width: 800px; /* Limit content width */
+            display: flex; /* Use flexbox layout */
+            align-items: center; /* Center items vertically */
+            justify-content: center; /* Center items horizontally */
+        }
+
+        footer {
+            background-color: rgba(255, 255, 255, 0.5); /* Set transparent background color */
+            text-align: left; /* Align text to the left */
+            width: 100%; /* Make footer full width */
+            padding: 20px; /* Add padding */
+        }
+
+        hr {
+            border: none; /* Remove default border */
+            border-top: 1px solid black; /* Add 1px solid black top border */
+            margin: 0; /* Remove default margin */
+        }
+
+        .btn {
+            background-color: #007bff; /* Set button background color */
+            color: white; /* Set text color */
+            padding: 15px 30px; /* Add padding to button */
+            border: none; /* Remove border */
+            border-radius: 8mm; /* Set border radius */
+            cursor: pointer; /* Set cursor to pointer */
+            text-decoration: none; /* Remove default link underline */
+            margin-top: 20px; /* Add margin to top */
+            margin-right: 10px; /* Add margin to right */
+        }
+
+        .merged-container {
+            display: flex; /* Use flexbox layout */
+            width: 100%; /* Make full width */
+            margin-top: 20px; /* Add margin to top */
+            border-radius: 10px; /* Set border radius */
+            overflow: hidden; /* Hide overflowing content */
+        }
+
+        .tom,
+        .jerry {
+            background-color: #edc4d6; /* Set background color */
+            padding: 60px; /* Add 1cm to the padding */
+            text-align: center; /* Align text to center */
+            display: flex; /* Use flexbox layout */
+            flex-direction: column; /* Arrange children in a column */
+            justify-content: center; /* Center items vertically */
+            align-items: center; /* Center items horizontally */
+            flex: 1; /* Grow to fill remaining space */
+            width: calc(70% + 120px); /* Increase width by 120 pixels */
+        }
+
+        .tom {
+            background-color: whitesmoke; /* Change background color */
+        }
+
+        .container img {
+            width: 200px; /* Set image width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 50%; /* Make image round */
+            margin-bottom: 10px; /* Add margin to bottom */
+            display: block; /* Ensure image is displayed as a block element */
+            margin: auto; /* Center the image horizontally */
+        }
+
+        .name {
+            font-size: 24px; /* Increase font size */
+            font-weight: bold; /* Make text bold */
+            margin-bottom: 10px; /* Add margin to bottom */
+        }
+
+        .subtitle {
+            font-size: 16px; /* Decrease font size */
+        }
+
+        .occupation {
+            font-size: 18px; /* Decrease font size */
+        }
+
+        .text-container {
+            background-color: white; /* Set background color to white */
+            padding: 20px; /* Add padding */
+            border-radius: 10px; /* Set border radius */
+            flex: 1; /* Grow to fill remaining space */
+            text-align: left; /* Align text to left */
+            margin-left: 20px; /* Add margin to left */
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: flex-end; /* Align content to the right */
+            margin-top: 10px;
+        }
+
+        .footer-content div {
+            margin-left: 20px; /* Add some spacing between sections */
+        }
+
+        .tom div {
+            display: flex; /* Use flexbox layout */
+            justify-content: space-between; /* Space items evenly */
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- Header content goes here -->
+    <h1>Kajal Padala / <span class="subtitle">Web Developer</span></h1>
+    <div>
+        <a href="2.html" style="text-decoration: none; color: black;">About Me</a>
+        <a href="1.html" style="text-decoration: none; color: black; margin-left: 10px;">Resume</a>
+        <a href="3.html" style="text-decoration: none; color: black; margin-left: 10px;">Project</a>
+    </div>
+</header>
+
+<main>
+    <!-- Image container -->
+    <div class="merged-container">
+        <div class="jerry">
+            <!-- Image -->
+            <img src="https://static.wixstatic.com/media/2e2a49_bd3a1599bc1b4265a01b2754b99b8536~mv2_d_5760_3840_s_4_2.jpeg/v1/crop/x_2703,y_43,w_2199,h_2205/fill/w_205,h_205,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/AdobeStock_230407429.jpeg" alt="Image">
+            <!-- Name -->
+            <div class="name">Kajal Padala</div>
+            <!-- Occupation -->
+            <div class="occupation">WEB DEVELOPER</div>
+        </div>
+
+        <!-- Section content -->
+        <div class="tom">
+            <h1><b>Hello</b></h1>
+            <h2>Here's who I am & what I do</h2>
+            <!-- Resume and Projects buttons -->
+            <div>
+                <a href="1.html" class="btn">RESUME</a>
+                <a href="3.html" class="btn">PROJECTS</a>
+            </div>
+            <!-- Paragraph content -->
+            <p>  I'm Kajal – a second-year B.Sc. student with a passion for software engineering, a love for dance and music, and a knack for whipping up mouthwatering dishes. Curious, creative, and always ready for the next adventure!</p>
+        </div>
+    </div>
+</main>
+
+<hr> <!-- Horizontal line between body and footer -->
+
+<footer>
+    <div class="footer-content">
+        <div>
+            <strong>Phone:</strong> <br>
+            <a href="tel:1234567890">8770703979</a>
+        </div>
+        <div>
+            <strong>Email:</strong> <br>
+            <a href="mailto:your.email@example.com">kajalpadala23@navgurukul.org</a>
+        </div>
+        <div>
+            <strong>Follow Me:</strong> <br>
+            <i class="fab fa-facebook"></i> <!-- Font Awesome icon for Facebook -->
+            <i class="fab fa-twitter"></i> <!-- Font Awesome icon for Twitter -->
+            <i class="fab fa-instagram"></i> <!-- Font Awesome icon for Instagram -->
+            <i class="fab fa-linkedin"></i> <!-- Font Awesome icon for LinkedIn -->
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
